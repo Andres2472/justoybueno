@@ -1,0 +1,396 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+h1{
+  color:red;
+   margin: 30%;
+   width: 40%;
+   background-color: green;
+   position:initial;
+   right: 30%;
+}
+
+body {
+  background-color: #85c1e9;
+}
+
+/* Video */
+iframe{
+  padding: 60px 202.5px;
+  background: #8A2387;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, hsla(23, 89%, 54%, 0.596), hsla(352, 79%, 58%, 0.603), hsla(302, 60%, 34%, 0.61)), url(../Imagenes/Ubicacion.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsla(23, 89%, 54%, 0.596), hsla(352, 79%, 58%, 0.603), hsla(302, 60%, 34%, 0.61)), url(../Imagenes/Ubicacion.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: cover;
+background-attachment: fixed;
+
+}
+
+
+/*Barra de busqueda*/
+.buscar{
+  position:fixed;
+  padding: 5px;
+  right: 1.5%;
+  display: block;
+  
+}
+.buscar input{
+  width: 0px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: black;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 30px;
+  transition: all 0.6s ease;
+}
+.boton{
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  background-color: slateblue;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+.buscar:hover input{
+  width: 240px;
+}
+.buscar input :focus{
+  width: 240px;
+}
+/*Barra de busqueda*/
+
+
+
+
+header nav {
+  background-color: orange;
+  overflow: hidden;
+}
+
+
+ 
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  float: left;
+}
+header nav ul li a {
+  padding: 8px 96px;
+  color: white;
+  text-decoration: underline;
+  display: block;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  background-color: red;
+  transition: 2s;
+  transform: scale(1.1);
+}
+
+
+/* Inicio borde */
+.logotipo {
+  height: 200px;
+  background-color: cyan;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+/* Fin borde */
+
+
+.imglogo {
+  height: 100%;
+  width: 400px;
+  margin: auto;
+  display: block;
+}
+
+.imgcentro{
+  padding: 10px 118.6px;
+  height: 100px;
+  width: 15%;
+  
+}
+
+/* Descuentos*/
+.descuentos{
+  padding: 30px 0 60px 0;
+}
+.contenedor-descuentos{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imagen-descuentos{
+  width: 48%;
+  border-radius: 30px;
+}
+.contenido-textos b{
+  color:red ;
+}
+.descuentos .contenido-textos{
+  width: 48%;
+}
+
+.contenido-textos h3{
+  margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+  background: #ffc400;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+  margin-right: 5px;
+  
+}
+
+.contenido-textos p{
+  padding: 0px 0px 30px 15px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+/* Descuentos*/
+
+/* IMAGENES */
+
+.titulo{
+  color:#f6a664;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.portafolio{
+  background:#85c1e9;
+}
+
+.galeria-port{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.imagen-port{
+  width: 24%;
+  height: 200px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow:  0 0 6px 0 rgba(0, 255, 34, 0.5);
+  border-radius: 30px;
+}
+@media only screen and (max-width: 600px) {
+  .imagen-port{
+    width: 96%;
+    height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow:  0 0 6px 0 rgba(0, 255, 34, 0.5);
+    border-radius: 30px;
+    
+  }
+  .separador{
+    width:2%;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 601px) {
+  .imagen-port{
+  width: 48%;
+  height: 200px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow:  0 0 6px 0 rgba(0, 255, 34, 0.5);
+  border-radius: 30px;
+  
+}
+.separador{
+  width:2%;
+} }
+
+.separador{
+  width:1%;
+}
+
+.imagen-port > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hover-galeria{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  background: rgba(6, 103, 132, 0.7);
+  transition: transform .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 30px;
+}
+
+.hover-galeria img{
+  width: 50px;
+  border-radius: 30px;
+}
+
+.hover-galeria p{
+  color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+  transform: scale(1);
+}
+/* CIERRE IMAGENES */
+
+/*Imagen Nuestros servicios */
+
+.servicio-cont{
+  justify-content: center;
+  flex-direction:row;
+  display:inline-flex;
+
+}
+
+.servicio-ind{
+  width: 100%;
+  text-align: center;
+}
+
+.servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+  margin-bottom: 60px;
+}
+
+.servicio-ind img{
+  width: 90%;
+}
+.about-services{
+    background:#85c1e9;
+    padding-bottom: 30px;
+}
+
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+    color: rgb(136, 255, 0);
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+    color: white;
+
+}
+
+
+/*Imagen Nuestros servicios */
+
+.compra h2{
+  color: #47ff47;
+}
+
+/*contenedor*/
+#contenedor {
+  width: 90%;
+  margin: 20px auto; 
+  display: flex;
+  max-width: 1000px;
+}
+
+#contenedor {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  max-width: 1000px;
+}
+
+.card {
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  margin: 5px;
+}
+
+.facebook{
+  height: 50px;
+  width: 15%;
+  margin: auto;
+}
+
+.instagram{
+  height: 50px;
+  width: 15%;
+  margin: auto;
+}
+
+.youtube{
+  height: 50px;
+  width: 15%;
+  margin: auto;
+
+}
+
+iframe.mapa{
+  padding: 50px 215.8px;
+  background: #009FFF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, hsla(351, 83%, 55%, 0.514), hsla(203, 100%, 50%, 0.514)), url(../Imagenes/justo\ y\ bueno\ fondo\ 2.jpg); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(351, 83%, 55%, 0.514), hsla(203, 100%, 50%, 0.514)), url(../Imagenes/justo\ y\ bueno\ fondo\ 2.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+background-size: cover;
+background-attachment: fixed;
+}
+
+/* Borde footer */
+footer {
+  background-color: rgb(212, 73, 73);
+  clear: both;
+  color: rgb(33, 230, 108);
+  text-align: center;
+  padding: 10px 0px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+/* Borde footer */
